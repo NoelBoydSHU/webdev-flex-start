@@ -3,6 +3,128 @@ body{
     font-family: helvetica, arial, sans-serif;
 	font-size:1em;
 }
-h1, h2{
+
+h1, h2
+{
     font-family: 'Raleway', sans-serif;
 }
+
+.container
+{
+    border:20px solid #ffff00;
+    width:100%;	
+    margin:auto;
+    max-width: 1200px;
+    min-width: 600px;
+    padding:50px;
+}
+
+nav ul li{	
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+    border-left:1px solid #7E8AA2;
+}
+
+nav ul{
+    padding-left:0;
+    list-style:none; /*removes list markers*/
+}
+
+header{
+    background-color:#263248;	
+    border-radius:8px;
+    display:flex; /*makes the header behave as a flex container*/
+    justify-content:space-between; /*ligns the flexible container's items when the items do not use all available space on the main-axis (horizontally)*/
+}
+
+nav li:first-child{ /* targets the first line item and creates a dividing border between the links*/
+    border-left:none;	
+}
+
+nav li a:hover{
+    color: #7E8AA2;	
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+header h1 a:hover{
+    text-decoration: underline;
+}
+#logo{
+    padding:10px;
+}
+
+section{
+    padding:0 10px 10px 0;
+    flex: 1 1 auto;
+}
+
+.sidebar{
+    padding:20px 40px;	
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top: 70px;
+    flex:0 0 200px;
+ }
+
+ main{
+    display:flex;
+    gap: 15px;
+}
+
+.resize-img{
+    width:100%;
+    height:100%;
+}
+
+footer{
+    border-top:1px solid #ccc;
+    margin:20px 10px 10px 0;
+    font-size:0.8em;
+    text-align:center;
+    font-style:italic;
+}
+
+table{
+    width:100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+th, td{
+    padding: 10px 4px;
+    text-align: left;	
+}	
+th{
+    text-transform: uppercase;
+    border-bottom: 4px solid #000;	
+    background-color: #fff;	
+}
+tr:nth-child(odd){ /*used to give the table a stripped effect by colouring odd table rows*/
+    background-color: #ccc;	
+}
+
+dt{ /*define a definition list*/
+    font-weight: bold;
+    border-top: 1px dashed #ccc;	
+    padding: 20px 0;	
+}
+dt:first-child{ /*define a definition terms first child*/
+    border-top: none;
+}
+dd{ /*define a definition description*/
+    padding: 0 0 20px 0;
+}
+
+.left-float{ /*makes the image 'float' to the left allowing text to flow around it.*/
+    float:left;
+    padding:0 15px 15px 0;
+}
+
+.right-float{
+    float:right;
+    padding: 15px 0 0 15px;
+}
+
